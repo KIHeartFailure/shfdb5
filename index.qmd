@@ -1,0 +1,37 @@
+---
+about:
+  template: marquee
+  id: about-block
+  image: "img/logo.jpg"
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/KIHeartFailure
+    - icon: envelope
+      text: Contact
+      href: "mailto:lina.benson@ki.se"  
+---
+
+::: {#about-block}
+:::
+
+# SwedeHF database 5 (SHFDB5)
+
+A Heart Failure cohort from Sweden 2000 - 2024. The population consists of 
+
+1) patients recorded in the Swedish Heart Failure Registry (SwedeHF), 
+
+2) patients recorded in the National Patient Register with an ICD-10 code for HF,
+
+3) patients recorded in primary care in Region Uppsala, Kalmar, Stockholm or Västra Götaland with an ICD-10 code for HF,
+
+4) gender, year of birth and county of residence matched HF-free controls for SwedeHF.
+
+
+Please feel free to [contact me](mailto:lina.benson@ki.se) if you have any questions.
+
+```{=html}
+<div  style="margin: 30px; text-align: center;">
+<a class="btn btn-primary" href="https://github.com/KIHeartFailure/shfdb5dm" role="button" target="_blank" style="padding: 15px 30px;">View/download the R code for the database</a>
+</div>
+```

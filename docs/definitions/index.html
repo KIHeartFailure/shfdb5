@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Definitions – SHFDB5</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../img/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4719e90145d2de3ab97e7443e3012f11.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../img/logo.jpg" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">SHFDB5</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../population/index.html"> 
+<span class="menu-text">Population</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../datasources/index.html"> 
+<span class="menu-text">Data Sources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../definitions/index.html" aria-current="page"> 
+<span class="menu-text">Definitions</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../versions/index.html"> 
+<span class="menu-text">Versions</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../variabledescription/index.html"> 
+<span class="menu-text">Variable Description</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../statistics/index.html"> 
+<span class="menu-text">Statistics</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:lina.benson@ki.se"> <i class="bi bi-envelope" role="img" aria-label="email">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Definitions</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="index-date" class="level2">
+<h2 class="anchored" data-anchor-id="index-date">Index date</h2>
+<p>Index date is defined as the registered date of discharge for in-patients and date of admission for out-patients in SwedeHF. For the patients identified through the National Patient Register with ICD codes the index date is defined as the first occurrence of a diagnosis of HF in main position. The controls receive the same index date as their matched case.</p>
+<hr>
+</section>
+<section id="follow-up" class="level2">
+<h2 class="anchored" data-anchor-id="follow-up">Follow-up</h2>
+<p>The follow-up period is defined as time from index date to emigration, death or end of follow-up, 2024-12-31, whichever came first.</p>
+<p>For the controls the follow-up period is defined as time from the matched cases index date to heart failure diagnosis (either in NPR or SwedeHF), emigration, death or end of follow-up, 2024-12-31, whichever came first.</p>
+<hr>
+</section>
+<section id="target-doses" class="level2">
+<h2 class="anchored" data-anchor-id="target-doses">Target doses</h2>
+<p>The following target doses are assumed</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 64%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Medication</th>
+<th style="text-align: left;">Substance/ARNi dose</th>
+<th style="text-align: right;">Target dose/% target dose for ARNi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Beta-blocker</td>
+<td style="text-align: left;">Atenolol</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Beta-blocker</td>
+<td style="text-align: left;">Betaxolol</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Beta-blocker</td>
+<td style="text-align: left;">Bisoprolol</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Beta-blocker</td>
+<td style="text-align: left;">Carvedilol</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Beta-blocker</td>
+<td style="text-align: left;">Labetalol</td>
+<td style="text-align: right;">400</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Beta-blocker</td>
+<td style="text-align: left;">Metoprolol</td>
+<td style="text-align: right;">200</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Beta-blocker</td>
+<td style="text-align: left;">Pindolol</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Beta-blocker</td>
+<td style="text-align: left;">Propanolol</td>
+<td style="text-align: right;">640</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Beta-blocker</td>
+<td style="text-align: left;">Sotalol</td>
+<td style="text-align: right;">320</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Beta-blocker</td>
+<td style="text-align: left;">Timolol</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MRA</td>
+<td style="text-align: left;">Eplerenon</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MRA</td>
+<td style="text-align: left;">Spironalakton</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ACEi</td>
+<td style="text-align: left;">Captopril</td>
+<td style="text-align: right;">150</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ACEi</td>
+<td style="text-align: left;">Cilazapril</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ACEi</td>
+<td style="text-align: left;">Enalapril</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ACEi</td>
+<td style="text-align: left;">Fosinopril</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ACEi</td>
+<td style="text-align: left;">Kinapril</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ACEi</td>
+<td style="text-align: left;">Lisinopril</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ACEi</td>
+<td style="text-align: left;">Perindopril</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ACEi</td>
+<td style="text-align: left;">Ramipril</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ACEi</td>
+<td style="text-align: left;">Trandolapril</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ARB</td>
+<td style="text-align: left;">Candesartan</td>
+<td style="text-align: right;">32</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ARB</td>
+<td style="text-align: left;">Eprosartan</td>
+<td style="text-align: right;">600</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ARB</td>
+<td style="text-align: left;">Irbesartan</td>
+<td style="text-align: right;">300</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ARB</td>
+<td style="text-align: left;">Losartan</td>
+<td style="text-align: right;">150</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ARB</td>
+<td style="text-align: left;">Telmisartan</td>
+<td style="text-align: right;">80</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ARB</td>
+<td style="text-align: left;">Valsartan</td>
+<td style="text-align: right;">320</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ARNi</td>
+<td style="text-align: left;">0/0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ARNi</td>
+<td style="text-align: left;">24/26</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ARNi</td>
+<td style="text-align: left;">48/52, 49/51</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ARNi</td>
+<td style="text-align: left;">61/64</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ARNi</td>
+<td style="text-align: left;">73/77</td>
+<td style="text-align: right;">37</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ARNi</td>
+<td style="text-align: left;">85/90</td>
+<td style="text-align: right;">44</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ARNi</td>
+<td style="text-align: left;">97/103, 98/102</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ARNi</td>
+<td style="text-align: left;">121/129, 122/128</td>
+<td style="text-align: right;">62</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ARNi</td>
+<td style="text-align: left;">145/155, 146/154</td>
+<td style="text-align: right;">75</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ARNi</td>
+<td style="text-align: left;">157/168</td>
+<td style="text-align: right;">81</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ARNi</td>
+<td style="text-align: left;">170/180</td>
+<td style="text-align: right;">87</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ARNi</td>
+<td style="text-align: left;">194/206, 195/205, 218/232, 219/231, 242/258, 243/257, 267/283, 292/308, 316/334, 340/360</td>
+<td style="text-align: right;">100</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr>
+</section>
+<section id="socio-economic-variables" class="level2">
+<h2 class="anchored" data-anchor-id="socio-economic-variables">Socio-economic variables</h2>
+<p>The socio-economic variables from LISA, Statistics Sweden, are from the year prior to the index year, so a patient with an index date 2015-03-06 will have income, marriage status and education from 2014.</p>
+<p>Limitations: Unmarried persons cohabiting without children are classified as Living alone. Education is not registered for individuals &lt; 25 years.</p>
+<hr>
+</section>
+<section id="comorbidities-and-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="comorbidities-and-outcomes">Comorbidities and outcomes</h2>
+<p>For all comorbidities and hospitalizations from the NPR date of admission/visit (INDATUM) is used to calculate if it is a comorbidity or outcome. Adjoining hospitalizations, where the discharge date of the former hospitalization is the same as the admission date of the latter, are merged together into one hospitalization in order to take into account possible transferrals between wards/hospitals.</p>
+<p>Limitation: For the comorbidities MI, IHD, Stroke, CABG and PCI there is no time restriction applied. There is no data prior to 1987 (for PCI, CABG only from 1997) and the earlier registrations will therefore not have had the possibility to accumulate comorbidities to the same extent as the latter. For more details see <a href="https://kiheartfailure.github.io/shfdb4/datasources/">Data Sources</a>)).</p>
+<p>Limitation: Out-patient visits in speciality (but not primary) care are covered from 2001. Therefore, for the earlier visits, these are (partially) not included in the comorbidities.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 78%">
+<col style="width: 4%">
+<col style="width: 6%">
+<col style="width: 2%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Code</th>
+<th style="text-align: left;">Register</th>
+<th style="text-align: left;">Position</th>
+<th style="text-align: left;">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">sos_com_hypertension</td>
+<td style="text-align: left;">ICD:I10-5</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_diabetes</td>
+<td style="text-align: left;">ICD:E10-4</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_ihd</td>
+<td style="text-align: left;">ICD:410-4, I20-5</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_mi</td>
+<td style="text-align: left;">ICD:410, 412, I21, I22, I252</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_angina</td>
+<td style="text-align: left;">ICD:I20</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_pci</td>
+<td style="text-align: left;">OP:FNG</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All OP</td>
+<td style="text-align: left;">-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_cabg</td>
+<td style="text-align: left;">ICD:Z951, Z955 OP:FNA, FNB, FNC, FND, FNE, FNF, FNH</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA All OP</td>
+<td style="text-align: left;">-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_dcm</td>
+<td style="text-align: left;">ICD:I420</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_pad</td>
+<td style="text-align: left;">ICD:I70-3</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_af</td>
+<td style="text-align: left;">ICD:I48</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_stroke</td>
+<td style="text-align: left;">ICD:430-4, 438, I60-4, I690-4</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_tia</td>
+<td style="text-align: left;">ICD:G45</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_valvular</td>
+<td style="text-align: left;">ICD:I05-8, I34-9, Q22, Q230-3, Q230-3, Q235-9, Z952-4</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_renal</td>
+<td style="text-align: left;">ICD:N18, N19, Z491, Z492, T824, Z490, Z992, I120, I130, I131, I132, N085, M103, E122, E112, E132, E102, E142, R944, N02-4, N06-8, N25, N11, N14-6, Q611-3, Q60-4, K767 OP:DR014, DR016, DR020, DR012, DR013, DR024, TJA33, TJA35, DR055, DR056, DR060, DR061, QF006 Ekod:Y841</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA All OP All Ekod</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_dialysis</td>
+<td style="text-align: left;">ICD:Z490, Z491, Z492, Z992 OP:DR012, DR013, DR014, DR016, DR020, DR024, TJA33, DR055, DR056, DR060, DR061, QF006</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA All OP</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_hyperkalemia</td>
+<td style="text-align: left;">ICD:E875</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_hypokalemia</td>
+<td style="text-align: left;">ICD:E876</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_copd</td>
+<td style="text-align: left;">ICD:J40-4</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_respiratory</td>
+<td style="text-align: left;">ICD:J</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_liver</td>
+<td style="text-align: left;">ICD:B18, I85, I864, I982, K70, K710, K711, K713-7, K72-4, K760, K762-9</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_sleepapnea</td>
+<td style="text-align: left;">ICD:G473</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_dementia</td>
+<td style="text-align: left;">ICD:F00-4, R54</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_depression</td>
+<td style="text-align: left;">ICD:F32-4</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_cancer3y</td>
+<td style="text-align: left;">ICD:C</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">-3yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_muscoloskeletal3y</td>
+<td style="text-align: left;">ICD:M</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-3yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_alcohol</td>
+<td style="text-align: left;">ICD:E244, E52, F10, G312, G621, G721, I426, K292, K70, K860, O354, P043, Q860, T51, Z502, Z714 Ekod:Y90, Y91</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA All Ekod</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_bleed</td>
+<td style="text-align: left;">ICD:S064, S065, S066, I850, I983, K226, K250, K252, K254, K256, K260, K262, K264, K266, K270, K272, K274, K276, K280, K284, K286, K290, K625, K661, K920, K921, K922, H431, N02, R04, R58, T810, D629 OP:DR029</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA All OP</td>
+<td style="text-align: left;">-5yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_out_hosphf</td>
+<td style="text-align: left;">ICD:I110, I130, I132, I255, I420, I423, I425, I426, I427, I428, I429, I43, I50, J81, K761, R570, 414W, 425E, 425F, 425G, 425H, 425W, 425X, 428</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_out_counthosphf</td>
+<td style="text-align: left;">ICD:I110, I130, I132, I255, I420, I423, I425, I426, I427, I428, I429, I43, I50, J81, K761, R570, 414W, 425E, 425F, 425G, 425H, 425W, 425X, 428</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_out_hospany</td>
+<td style="text-align: left;">ICD:</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_out_hospcv</td>
+<td style="text-align: left;">ICD:I, J81, K761, G45, R570</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_out_hospnoncv</td>
+<td style="text-align: left;">ICD:Not I, J81, K761, G45, R570</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_out_hospstroketia</td>
+<td style="text-align: left;">ICD:I60-4, G45</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_out_hospmi</td>
+<td style="text-align: left;">ICD:I21, I22</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_out_hospihd</td>
+<td style="text-align: left;">ICD:I20-5</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_out_hospventfib</td>
+<td style="text-align: left;">ICD:I490, I472</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_out_hospscd</td>
+<td style="text-align: left;">ICD:I461</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_out_hosprespiratory</td>
+<td style="text-align: left;">ICD:J</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_out_hosppneumonia</td>
+<td style="text-align: left;">ICD:J09, J10-8</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_out_hosprenalacute</td>
+<td style="text-align: left;">ICD:N17, N184, N185, Z491, Z492 OP:DR014, DR015, DR016, DR020, DR023, DR024, DR055, DR056</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA All OP</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_out_renalendstage</td>
+<td style="text-align: left;">ICD:Z940, Z491, Z492, Z992, Z490 OP:KAS10, KAS20, DR012-4, DR016, DR020, DR024, TJA33, DR055, DR056, DR060, DR061, QF006</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA All OP</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_out_hospcancer</td>
+<td style="text-align: left;">ICD:C</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_out_hospbleed</td>
+<td style="text-align: left;">ICD:S064, S065, S066, I850, I983, K226, K250, K252, K254, K256, K260, K262, K264, K266, K270, K272, K274, K276, K280, K284, K286, K290, K625, K661, K920, K921, K922, H431, N02, R04, R58, T810, D629 OP:DR029</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA All OP</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_out_hosphyperkalemia</td>
+<td style="text-align: left;">ICD:E875</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_out_hosphypokalemia</td>
+<td style="text-align: left;">ICD:E876</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_out_hospsyncope</td>
+<td style="text-align: left;">ICD:R55</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_out_hosptrauma</td>
+<td style="text-align: left;">ICD:S, T0, T10-4</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">HDIA</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_out_hosprevasc</td>
+<td style="text-align: left;">OP:FNG, FNA, FNB, FNC, FND, FNE, FNF, FNH</td>
+<td style="text-align: left;">NPR (in)</td>
+<td style="text-align: left;">All OP</td>
+<td style="text-align: left;">1-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_out_deathcv</td>
+<td style="text-align: left;">ICD:^(I, J81, K761, R570, G45)</td>
+<td style="text-align: left;">Cause of Death</td>
+<td style="text-align: left;">ULORSAK</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_out_deathscd</td>
+<td style="text-align: left;">ICD:^I461</td>
+<td style="text-align: left;">Cause of Death</td>
+<td style="text-align: left;">ULORSAK</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr>
+</section>
+<section id="charlson-comorbidity-index" class="level2">
+<h2 class="anchored" data-anchor-id="charlson-comorbidity-index">Charlson comorbidity index</h2>
+<p>The ICD-9/10 codes used are not necessarily the same as in the other comorbidities and outcomes but from https://www.dovepress.com/articles.php?article_id=61144.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 68%">
+<col style="width: 6%">
+<col style="width: 4%">
+<col style="width: 4%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Code</th>
+<th style="text-align: left;">Register</th>
+<th style="text-align: left;">Position</th>
+<th style="text-align: left;">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">sos_com_cci_mi</td>
+<td style="text-align: left;">ICD:410, 412, I21, I22, I252</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_cci_pvd</td>
+<td style="text-align: left;">ICD:440, 441, 443B, 443X, 447B, 557, I70, I71, I731, I738, I739, I771, I790, I792, K55</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_cci_cd</td>
+<td style="text-align: left;">ICD:430-8, G45, I60-4, I67, I69</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_cci_copd</td>
+<td style="text-align: left;">ICD:491, 492, 496, J43-4, 490, 493-5, 500-8, 516, 517, J41, J42, J45-7, J60-9, J70</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_cci_rheumatic</td>
+<td style="text-align: left;">ICD:446, 696A, 710A-E, 714, 719D, 720, 725, M05, M06, M123, M070-3, M08, M13, M30, M313-6, M32, M33, M34, M350, M351, M353, M45, M46</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_cci_dementia</td>
+<td style="text-align: left;">ICD:290, 294B, 331A-C, 331X, F00-3, F051, G30, G311, G319</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_cci_plegia</td>
+<td style="text-align: left;">ICD:342, 343, 344A-F, G114, G80-2, G830-3, G838</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_cci_diabetes</td>
+<td style="text-align: left;">ICD:250A-C, E100, E101, E110, E111, E120, E121, E130, E131, E140, E141</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_cci_diabetescompliation</td>
+<td style="text-align: left;">ICD:250D-G, E102-5, E107, E112-7, E122-7, E132-7, E142-7</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_cci_renal</td>
+<td style="text-align: left;">ICD:403A, 403B, 403X, 582, 583, 585, 586, 588A, V42A, V45B, V56, N032-7, N052-7, N11, N18, N19, N250, I120, I131, Q611-4, Z49, Z940, Z992</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_cci_livermild</td>
+<td style="text-align: left;">ICD:070, 571C, 571E, 571F, 573, B15-9, K703, K709, K73, K746, K754</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_cci_liverspec</td>
+<td style="text-align: left;">ICD:789F, R18</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_cci_livermodsev</td>
+<td style="text-align: left;">ICD:789F, 456A-C, 572D-E, 572C, R18, I850, I859, I982, I983</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_cci_pud</td>
+<td style="text-align: left;">ICD:531-4, K25-8</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_cci_malignancy</td>
+<td style="text-align: left;">ICD:14-9, 200-8, C0-7, C80-6, C88-9, C90-7</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sos_com_cci_metastatictumor</td>
+<td style="text-align: left;">ICD:196-8, 199A, 199B, C77-9, C80</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sos_com_cci_hiv</td>
+<td style="text-align: left;">ICD:079J, 279K, B20-4, F024, O987, R75, Z219, Z717</td>
+<td style="text-align: left;">NPR (in+out)</td>
+<td style="text-align: left;">All DIA</td>
+<td style="text-align: left;">-10yrs-0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><span class="faux-block"><a href="https://ki.se/en/research/research-areas-centres-and-networks/research-groups/center-for-heart-failure-and-arrhythmia-gianluigi-savarese">Gianluigi Savarese research group</a></span></p>
+</div>   
+    <div class="nav-footer-center">
+<p><span class="faux-block"><a href="https://github.com/KIHeartFailure/shfdb5/">View the code for this website on GitHub</a></span></p>
+</div>
+    <div class="nav-footer-right">
+<p><span class="faux-block"><a href="https://github.com/KIHeartFailure/shfdb5dm/">View the R code for the database on GitHub</a></span></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
