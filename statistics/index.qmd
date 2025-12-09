@@ -113,20 +113,20 @@ taball <- taball %>%
     # so no probs
     # Variable = sanitize_text(Variable),
     Variable = paste0(Variable, footnote),
-    # fix get/let
+#    # fix get/let
     Variable = str_replace(Variable, ">=", "&ge;"),
     Variable = str_replace(Variable, "<=", "&le;"),
 
     # space in output
     Variable = sub("  ", "&#160;&#160;&#160;", Variable)
-    # Variable <- str_replace(Variable, fixed("  "), "&nbsp;&nbsp;&nbsp;&nbsp;")
+    #Variable = str_replace(Variable, fixed("  "), "&nbsp;&nbsp;&nbsp;&nbsp;")
     # Variable = sub("  ", "&nbsp", Variable)
   ) %>%
   select(Variable, Missing...2:"Control SwedeHF")
 
 colnames(taball) <- c("Variable", rep(c("% missing", "SwedeHF"), 2), "Case NPR", "Control SwedeHF")
 
-knitr::kable(taball, row.names = F, escape = FALSE) %>%
+knitr::kable(taball, row.names = F, escape = FALSE, format = "html") %>%
   add_header_above(c(" " = 1, "Patients (last post)" = 2, "Posts" = 2, " " = 1, " " = 1)) %>%
   footnote(
     general = c(
@@ -137,7 +137,7 @@ knitr::kable(taball, row.names = F, escape = FALSE) %>%
       "Source: SwedeHF",
       "Source: NPR",
       "Source: SCB"
-    ), escape = TRUE,
+    ), 
     threeparttable = T
   )
 ```
