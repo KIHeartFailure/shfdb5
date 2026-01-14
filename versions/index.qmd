@@ -5,3 +5,9 @@ title: Versions
 ## 5.0.0
 
 - This is the first version. 
+
+## 5.0.1
+
+- Added procedure codes SP342, SP352, SP362, JAK10, DJ008, DK001 to sos_com_renal, sos_com_dialysis and sos_out_renalendstage. 
+- Added procedure codes SP311, SP341, SP351, SP361 to sos_out_hosprenalacute. 
+- Removed one duplicated control. 
