@@ -26,3 +26,4 @@ checks/
 data/
 extra/
 deskstatshfdb4/
+**/*.quarto_ipynb
