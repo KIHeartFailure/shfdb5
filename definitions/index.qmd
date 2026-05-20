@@ -22,7 +22,6 @@ load(file = here::here("../dm/data/rsdata_for_webb.RData"))
 
 ## Index date
 
-
 Index date is defined as the registered date of discharge for in-patients and date of admission for out-patients in SwedeHF. For the patients identified through the National Patient Register with ICD codes the index date is defined as the first occurrence of a diagnosis of HF in main position. The controls receive the same index date as their matched case.
 
 ----
@@ -41,6 +40,19 @@ The following target doses are assumed
 
 ```{r td}
 kable(targetdose, col.names = c("Medication", "Substance/ARNi dose", "Target dose/% target dose for ARNi"))
+```
+
+----
+
+## Medications from The National Prescribed Drug Register
+
+SGLT2i and GLP1a are derived from the The National Prescribed Drug Register and included in the base version of the database. 
+
+```{r lm}
+metalm <- metalm %>%
+  mutate(Register = "The National Prescribed Drug Register")
+
+kable(metalm)
 ```
 
 ----

@@ -58,7 +58,7 @@ The National Prescribed Drug Register (Swedish: Läkemedelsregistret) is managed
 
 For more information, see [https://www.socialstyrelsen.se/en/statistics-and-data/registers/national-prescribed-drug-register/](https://www.socialstyrelsen.se/en/statistics-and-data/registers/national-prescribed-drug-register/).
 
-No information from the Prescribed Drug Register is included in the base version of SHFDB4 but information from the register can be added upon request.
+Only SGLT2i and GLP1a are derived and included in the base version of SHFDB5. However, further information from the register can be added upon request.
 
 ----
 

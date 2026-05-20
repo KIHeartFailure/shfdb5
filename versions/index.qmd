@@ -15,3 +15,9 @@ title: Versions
 ## 5.0.2
 
 - Added EF date. 
+
+## 5.0.3
+
+- Added sos_med_sglt2i, sos_med_glp1a
+- Changed name for shf_sglt2, shf_sglt2sub, shf_sglt2dose to shf_sglt2i, shf_sglt2isub, shf_sglt2idose
+- Changed name for shf_fcmiv, shf_fcmivdose, shf_fcmivdtm to shf_iviron, shf_ivirondose, shf_ivirondtm and added shf_ivironsub. For all iv iron variables included also ferric derisomaltose. 
