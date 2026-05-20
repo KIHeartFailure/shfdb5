@@ -135,7 +135,7 @@ knitr::kable(taball, row.names = F, escape = FALSE, format = "html") %>%
     ),
     number = c(
       "Source: SwedeHF",
-      "Source: NPR",
+      "Source: National Board of Health and Welfare",
       "Source: SCB"
     ), 
     threeparttable = T
